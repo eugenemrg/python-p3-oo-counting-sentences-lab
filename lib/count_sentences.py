@@ -23,7 +23,7 @@ class MyString:
     return '!' == self._value[-1]
   
   def count_sentences(self):
-    return len(re.findall("([\\w ,]+)[.+?+!+]" ,self._value))
+    return len(re.findall("([\\w ,]+)[.+?+!+]", self._value))
       
   value = property(get_string, set_string)
   # pass
